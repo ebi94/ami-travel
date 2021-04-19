@@ -22,7 +22,7 @@ const SignUp = () => {
       <FormWrapper>
         <Logo withLink linkTo="/" src={amiLogo} title="AMI" />
         <Title>Selamat Datang di <br />Asosiasi Muthowif Indonesia</Title>
-        <TitleInfo>Silahkan Daftar Disini</TitleInfo>
+        <TitleInfo>Silahkan Daftar Sebagai Travel Disini</TitleInfo>
         <SignUpForm />
         {/* <Divider>Or Register Up With </Divider>
         <SocialLogin /> */}

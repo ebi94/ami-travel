@@ -29,8 +29,8 @@ const AuthProvider = (props) => {
     axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
     axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
     axios.defaults.headers.post['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept';
-    axios.post('https://backend-ami.herokuapp.com/muthowif', {
-      first_name: params.namalengkap,
+    axios.post('https://backend-ami.herokuapp.com/travel', {
+      travelName: params.namatravel,
       phone: params.telp,
       email: params.email,
       password: params.password

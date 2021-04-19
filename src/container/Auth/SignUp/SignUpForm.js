@@ -26,8 +26,8 @@ export default () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <FormControl
-        label="Nama Lengkap"
-        htmlFor="namalengkap"
+        label="Nama Travel"
+        htmlFor="namatravel"
         error={
           errors.username && (
             <>
@@ -40,8 +40,8 @@ export default () => {
       >
         <Controller
           as={<Input />}
-          id="namalengkap"
-          name="namalengkap"
+          id="namatravel"
+          name="namatravel"
           defaultValue=""
           control={control}
           rules={{

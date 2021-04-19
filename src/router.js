@@ -118,15 +118,6 @@ const routes = [
       modules: ['Pricing'],
     }),
   },
-  {
-    path: MUTHOWIF_REGISTRATION_PAGE,
-    component: Loadable({
-      loader: () =>
-        import(/* webpackChunkName: "Muthowif" */ './container/Auth/Muthowif/SignUp'),
-      loading: Loading,
-      modules: ['Muthowif'],
-    }),
-  },
 ];
 
 /**
