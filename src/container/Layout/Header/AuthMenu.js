@@ -5,10 +5,13 @@ import { Menu } from 'antd';
 import { LOGIN_PAGE, REGISTRATION_PAGE } from 'settings/constant';
 
 const AuthMenu = ({ className }) => {
+
+  const dashboardUrl = process.env.REACT_APP_DASHBOARD_URL;
+
   return (
     <Menu className={className}>
       <Menu.Item key="0">
-        <NavLink to={LOGIN_PAGE}>Masuk</NavLink>
+        <a href={dashboardUrl + `/login`}>Masuk</a>
       </Menu.Item>
       <Menu.Item key="1">
         <NavLink to={REGISTRATION_PAGE}>Daftar</NavLink>

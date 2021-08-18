@@ -5,6 +5,8 @@ import swal from 'sweetalert';
 
 export const AuthContext = React.createContext();
 
+const baseUrl = process.env.REACT_APP_BACKEND_API;
+
 const fakeUserData = {
   id: 1,
   name: 'Jhon Doe',
@@ -29,11 +31,12 @@ const AuthProvider = (props) => {
     axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
     axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
     axios.defaults.headers.post['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept';
-    axios.post('https://backend-ami.herokuapp.com/travel', {
+    axios.post(baseUrl + `/travel`, {
       travelName: params.namatravel,
       phone: params.telp,
       email: params.email,
-      password: params.password
+      password: params.password,
+      role: 0
     })
     .then((response) => {
       const messages = response && response.data && response.data.messages;
