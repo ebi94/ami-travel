@@ -16,6 +16,7 @@ import {
   PRIVACY_PAGE,
   PRICING_PLAN_PAGE,
   MUTHOWIF_REGISTRATION_PAGE,
+  CONFIRM_EMAIL_PAGE
 } from './settings/constant';
 
 /**
@@ -67,6 +68,15 @@ const routes = [
         ),
       loading: Loading,
       modules: ['ForgetPassword'],
+    }),
+  },
+  {
+    path: `${CONFIRM_EMAIL_PAGE}/:token`,
+    component: Loadable({
+      loader: () =>
+        import(/* webpackChunkName: "Travel" */ './container/Auth/Travel/ConfirmEmail'),
+      loading: Loading,
+      modules: ['Travel'],
     }),
   },
   {
