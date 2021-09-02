@@ -15,6 +15,7 @@
 		"lodash": "^4.17.15",
 		"moment": "^2.25.3",
 		"nprogress": "^0.2.0",
+		"pdfmake": "^0.2.2",
 		"rc-queue-anim": "^1.4.0",
 		"rc-scroll-anim": "^2.1.0",
 		"rc-tween-one": "^1.5.5",

@@ -7,6 +7,7 @@ import MisiCard from 'components/MisiCard/MisiCard';
 import JoinCard from 'components/JoinCard/JoinCard';
 import SignupCard from 'components/SignupCard/SignupCard';
 import Article from '../Article/Article';
+import WhatsappChat from '../../components/WhatsappChat/WhatsappChat';
 import ImageCarousel from './ImageCarousel/ImageCarousel';
 
 const Home = () => {
@@ -63,6 +64,7 @@ const Home = () => {
             </div>
             <SignupCard />
             <Article />
+            <WhatsappChat />
         </>
     );
 };
