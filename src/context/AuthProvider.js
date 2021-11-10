@@ -60,7 +60,7 @@ const AuthProvider = (props) => {
 		axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
 		axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
 		axios.defaults.headers.post['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept';
-		return axios.patch(baseUrl + '/auth/confirm/' + email, {
+		return axios.patch(baseUrl + '/auth-user/confirm/' + email, {
 			email: email
 		})
 			.then(async (response) => {
